@@ -1,0 +1,200 @@
+/* Estilos generales */
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Esto añade espacio entre los productos */
+    max-width: 200%; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Esto centrará la columna en la página */
+}
+
+.grid-item {
+    flex: 0 0 auto; /* Evita que los items se estiren */
+    width: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #141414;
+     /* Opcional: añade un borde para separar visualmente los productos */
+}
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el grid de productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Aumentamos el tamaño mínimo */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding-bottom: 60px; /* Añadimos padding en la parte inferior para el botón */
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Ajusta este valor según tus necesidades */
+    overflow: hidden;
+}
+
+.carousel img {
+    position: absolute;
+    
+    top: 0;
+    left: 50px;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    bottom: 10px; /* Cambiado de top a bottom */
+    transform: none; /* Eliminamos el translateY */
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 5px 10px; /* Reducimos un poco el padding */
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Estilos para la información del producto */
+.product-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 60px; /* Aumentamos el padding inferior */
+}
+
+.product h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product p {
+    margin: 0 0 5px 0; /* Añadimos un pequeño margen inferior */
+    color: #666;
+    font-size: 0.9em;
+}
+
+.product .price {
+    font-weight: bold;
+    color: #e44d26;
+    margin-top: 5px; /* Reducimos el margen superior */
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Estilos para el botón de añadir al carrito */
+.product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.add-to-cart-button {
+    display: block;
+    width: 100%; /* Reducido de 100% a 80% para que no ocupe todo el ancho */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 50px auto 0; /* Centrado horizontal con margen automático */
+    align-self: center; /* Centrado adicional */
+    
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    /* Estilos aquí */
+  }
+  
+  /* Estilos para tabletas */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos aquí */
+  }
+  
+  /* Estilos para escritorio */
+  @media (min-width: 769px) {
+    /* Estilos aquí */
+  }
+  
+body {
+    padding: 0em 0;
+    background: linear-gradient(to bottom, #FFFFFF, #666666);
+}
+

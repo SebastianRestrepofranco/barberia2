@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Productos - Barbería Escape</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleProductos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo-final.png" alt="Logo Barbería Escape"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+
+
+                        <li>
+                            <a href="carrito.html">
+                                <img src="imagenes/carrito-de-compras.png" alt="Carrito de compras" width="20" height="20">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="productos" class="productos">
+                <h2 class="titulo-principal">Productos</h2>
+                <div class="grid-container" >
+                    <div class="grid-item"data-product-id="1">
+                        <h3>Maquina corte de cabello</h3>
+                        <p>Máquina profesional para cortes precisos</p>
+                        <p class="precio">Precio: $50.00</p>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="imagenes/productos/maquina/maquina.png" alt="Maquina 1" class="active">
+                                <img src="imagenes/productos/maquina/maquina1.png" alt="Maquina 2">
+                                <img src="imagenes/productos/maquina/maquina2.png" alt="Maquina 3">
+                            </div>
+                            <button class="carousel-control-prev">Anterior</button>
+                            <button class="carousel-control-next">Siguiente</button>
+                        </div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <div class="grid-item"data-product-id="2">
+                        <h3>Crema para cabello</h3>
+                        <p>crema para peinados mas  firmes y duraderos</p>
+                        <p class="precio">Precio: $40.00</p>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="imagenes/productos/cera para cabello/cera para cabello.jpg" alt="Maquina 1" class="active">
+                                <img src="imagenes/productos/cera para cabello/cera para cabello1.jpg" alt="Maquina 2">
+                                <img src="imagenes/productos/cera para cabello/cera para cabello2.jpg" alt="Maquina 3">
+                            </div>
+                            <button class="carousel-control-prev">Anterior</button>
+                            <button class="carousel-control-next">Siguiente</button>
+                        </div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <div class="grid-item"data-product-id="3">
+                        <h3>Combo Tijeras profesionales</h3>
+                        <p>Tijeras profesionales para un corte mas suave y preciso</p>
+                        <p class="precio">Precio: $45.00</p>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="imagenes/productos/tijeras kit/tijeras kit.jpg" alt="Producto 3 1" class="active">
+                                <img src="imagenes/productos/tijeras kit/tijeras kit1.jpg" alt="Producto 3 2">
+                                <img src="imagenes/productos/tijeras kit/tijeras kit2.jpg" alt="Producto 3 3">
+                            </div>
+                            <button class="carousel-control-prev">Anterior</button>
+                            <button class="carousel-control-next">Siguiente</button>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="imagenes/barberia.webp">
+            <p class="copyright">&copy Copyright Barbería Escape - 2023</p>
+        </footer>
+        <script src="productos.js"></script>
+        <script src="addproductos.js"></script>
+        
+
+    </body>
+</html>

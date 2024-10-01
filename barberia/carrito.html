@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras - Barbería Escape</title>
+    <link rel="stylesheet" href="styleCarrito.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleProductos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo-final.png" alt="Logo Barbería Escape"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li>
+                        <a href="carrito.html">
+                            <img src="imagenes/carrito-de-compras.png" alt="Carrito de compras" width="20" height="20">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Tu Carrito de Compras</h2>
+        
+        <section id="carrito">
+            <!-- El contenido del carrito se cargará dinámicamente aquí -->
+        </section>
+    
+
+        <section id="datos-comprador">
+            <h3>Datos del Comprador</h3>
+            <form id="formulario-comprador">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="documento">Documento de identidad:</label>
+                <input type="text" id="documento" name="documento" required>
+
+                <label for="direccion">Dirección de envío:</label>
+                <textarea id="direccion" name="direccion" required></textarea>
+            </form>
+        </section>
+
+        <section id="metodo-pago">
+            <h3>Método de Pago</h3>
+            <form id="formulario-pago">
+                <label>
+                    <input type="radio" name="metodo-pago" value="tarjeta" checked> Tarjeta de Crédito/Débito
+                </label>
+                <label>
+                    <input type="radio" name="metodo-pago" value="paypal"> PayPal
+                </label>
+                <label>
+                    <input type="radio" name="metodo-pago" value="transferencia"> Transferencia Bancaria
+                </label>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <img src="imagenes/barberia.webp">
+        <p class="copyright">&copy Copyright Barbería Escape - 2023</p>
+    </footer>
+    
+    <script src="carrito.js"></script>
+</body>
+</html>

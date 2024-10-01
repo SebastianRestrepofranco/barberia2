@@ -1,0 +1,116 @@
+.titulo-principal{
+    padding-left: 30px;
+}
+
+
+#banner{
+    width:90%;
+}
+
+.principal{
+    background: #00000000;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color:red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
+
+.button-container {
+    text-align: center;
+  }
+
+.elegant-button {
+    background-color: #000000;
+    color: #bd1111;
+    padding: 40px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+
+.elegant-button:hover {
+    background-color: #3e8e41;
+  }
+
+
+
+  /* stilo de productos*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-item h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.grid-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.grid-item button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.grid-item button:hover {
+    background-color: #3e8e41;
+}
+
